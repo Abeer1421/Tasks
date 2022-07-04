@@ -1,2 +1,2 @@
 # Tasks
-The task of converting voice to text and, the task of writing an wisdom ESP32 operating algorithm .
+The task one is converting voice to text by using java script and html ,and the second task is writing steps operating algorithm of an wisdom ESP32. 
