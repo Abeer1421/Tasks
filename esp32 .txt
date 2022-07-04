@@ -1,0 +1,19 @@
+For programming ESP32 board with Arduino IDE first step is to add ESP32 board support on Arduino IDE. For this follow the steps below:
+ 1-Install a piece(ESP23) on the device using a cable .
+ 2- Installing ESP32 board support .
+ 3- Before going to Arduino IDE make sure you have internet access in your computer because further steps will need internet access for installing esp32 board files on Arduino IDE .
+ 4- Open Arduino IDE go to “File” in menu bar and open “Preferences”.
+ 5- As “Preferences” dialog box opens, copy the URL in “Additional Board Manager URLs.After this select “OK”.
+ 6- Now go to open “Tools>Board>Board Manager”.
+ 7- As soon as you open Board Manager you can see certain download process going at the bottom of screen. Wait till this process gets completed. Once this process is completed search for “esp32” in search box.
+ 8- open again Board Manager as stated in step 5.You can see the esp32 package by Espressif Systems in Board Manager select it and then select “Install”.
+ 9- Once installation starts wait for a while till installation process gets completed.
+ 10-after installation process , close the Board Manager and goto “Tools>Board” and scroll down,there you can see a complete category of different esp32 boards under the name “ESP32 Arduino”,In that select “ESP32 Dev Module” if you are using standard ESP32 board made by Espressif Systems or select any other depending on which board you are using.
+ 11- After selecting esp32 board you can see the board name at the bottom right corner of your Arduino screen changes to board name selected by you. Beside board name you can see certain other parameters,this are mainly parameters related to the code upload process on esp32.
+ 12- Let’s flash one of the example code in esp32. Goto “Files>Examples”. Scroll across the examples list you can see separate sections of examples titled as “Built-in Examples”,“Examples for any board”.One such section is “Examples for ESP32 Dev Module”.This section consists of examples exclusively made for esp32 boards.the example “GetChipID” that gives you chipId of your esp32 chip present on your board.
+ 13- Goto “Tools>Port” and select the port available in the list(COM26) and then upload the code.
+ 14 -To run the piece, we write a code that contains basic functions.
+ 16- The setup function runs once when you press reset or power the board .
+ 17- void setup() { //initialize digital pin as an output. pinmode(15,output); }
+ 18- The loop function runs over and over again forever .
+ 19- void loop() { digitalwrite(15,HIGGH); //turn the pin on(HIGH is the voltage level. //wait for a second delay(250) ; }
